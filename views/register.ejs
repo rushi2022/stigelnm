@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>courses Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <%- include('header.ejs'); %>
+    <div class="login-form">
+      <form action="/register" method="post">
+        <% if(inTheData){ %>
+          <h1>You have already Account in this Website</h1>
+      <%  } %>
+        <h1>Register</h1>
+        <div class="content">
+          <div class="input-field">
+            <input
+              type="name"
+              placeholder="Full Name"
+              autocomplete="new-Name"
+              name="fullname"
+              value='<%= userdata.fullname  %>'
+               required
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="nope"
+              required
+            />
+          </div>
+
+          <div class="input-field">
+            <input
+              type="date"
+              name="age"
+              placeholder="Age"
+              autocomplete="new-age"
+            value='<%= userdata.age  %>'
+             required
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              name="adress"
+              placeholder="Adress"
+              autocomplete="new-adress"
+              value='<%= userdata.adress  %>'
+               required
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="new-password"
+               required
+            />
+          </div>
+        </div>
+        <div class="action">
+          <button type="submit" value="Register ">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

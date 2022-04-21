@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+          alt="user"
+          width="100"
+        />
+
+        <h4><%= userdata.fullname %></h4>
+        <!-- <p>UI Developer</p> -->
+      </div>
+      <div class="right">
+        <div class="info">
+          <h3>Information</h3>
+          <div class="info_data">
+            <div class="data">
+              <h4>Email</h4>
+              <p><%= userdata.email %></p>
+            </div>
+            <div class="data">
+              <h4>Birth date</h4>
+              <p><%= userdata.age %></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <h3>Adress</h3>
+          <div class="projects_data">
+            <div class="data">
+              <h4>Recent</h4>
+              <p><%= userdata.adress %></p>
+            </div>
+            <div class="data">
+              <h4>Course Done</h4>
+           <%   if(userdata.isTrue){ %>
+<p>1</p>
+             <% }else { %> 
+                <p>0</p>
+             <% } %>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

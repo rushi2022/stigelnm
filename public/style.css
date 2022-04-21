@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(4940019.jpg);
+  font-family: "Source Code Pro", monospace;
+}
+.wrapper {
+  background-size: cover;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.navbar h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .heading {
+  color: white;
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.navbar ul {
+  float: right;
+  margin: 26px 37px;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+.navbar ul li a {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 6px 13px;
+  text-decoration: none;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: red;
+  border-radius: 2px;
+}
+.wrapper .center {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+  font-family: "Source Code Pro", monospace;
+}
+.wrapper .center h3 {
+  color: black;
+}
+
+.center h1 {
+  color: black;
+  font-size: 70px;
+  width: 900px;
+  font-weight: bold;
+  text-align: center;
+}
+.center h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 885px;
+  text-align: center;
+}
+.center .buttons {
+  margin: 35px 280px;
+}
+.buttons button {
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+
+  background: red;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #cc0000;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.buttons button a {
+  text-decoration: none;
+  color: #ffb3b3;
+}
+.buttons .btn2 {
+  margin-left: 25px;
+}
+.buttons button:hover {
+  background: #cc0000;
+}

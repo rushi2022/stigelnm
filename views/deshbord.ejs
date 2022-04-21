@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Website</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="deshbord.css"/>
+</head>
+<body>
+
+	<div class="wrapper">
+	<nav class="navbar">
+  <h1 class="heading"><a href="/home">Courses</a></h1>
+   <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/logout">logout</a></li>
+  </ul>
+  </nav>
+		
+<div class="center">
+			<h1>Day 1: Learn Html hear </h1>
+            <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<h1>Day 2: learn Css</h1>
+            <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<h1>Day 3:Learn JavaScript hear</h1>
+            <iframe width="560" height="315"  class="video"src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<div class="buttons">
+			<%	if(isTrue){ %>
+					<h3>Completed</h3>
+			<%	}else{ %>
+	<button><a href="/markAsRead">Mark As Read</a></button>
+				<% } %>
+		</div>
+		</div>
+</body>
+</html>
