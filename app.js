@@ -10,7 +10,7 @@ require("./conn");
 const Register = require("./models/registers");
 const jsonparser = bodyparser.json();
 
-const port = 3002;
+const port = process.env.PORT || 5000;
 const path = require("path");
 const { json } = require("express/lib/response");
 
